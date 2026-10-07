@@ -234,6 +234,30 @@
       .outline-word{ font-size:30vw; }
     }
 
+    /* ---------- mobile hero white-gap root-cause fixes (mobile only; desktop unchanged) ---------- */
+    #home{ position:relative; overflow:hidden; min-height:0; }
+    .hero-watermark{
+      position:absolute !important; left:0; top:-1rem;
+      pointer-events:none !important; user-select:none !important;
+      max-width:100%; white-space:nowrap; line-height:1 !important;
+    }
+    /* Hidden mobile dropdown must never occupy layout (it lives inside the sticky
+       header, so an invisible-but-in-flow menu pushes the hero ~430px down). */
+    #mobileMenu{ position:absolute; top:100%; left:1rem; right:1rem; z-index:60; margin:0; }
+    #mobileMenu.hiddenMenu{ display:none !important; }
+    /* Floating mobile CTA overlays content; never participates in document flow. */
+    #mobileBar{ position:fixed; padding-bottom:calc(.5rem + env(safe-area-inset-bottom)); }
+    @media (max-width:768px){
+      #home .hero-watermark{
+        font-size:80px !important; line-height:1 !important; top:20% !important;
+        pointer-events:none !important; user-select:none !important;
+      }
+      #home .hero-grid{
+        padding-top:2rem !important; padding-bottom:2.5rem !important;
+        gap:2rem !important; min-height:0 !important;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce){
       html{ scroll-behavior:auto; }
       *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
@@ -298,9 +322,9 @@
 
   <main id="main">
     <!-- ══════════ HERO ══════════ -->
-    <section id="home" class="relative overflow-hidden">
-      <span aria-hidden="true" class="outline-word font-serif absolute -top-4 left-0 text-[24vw] leading-none font-bold pointer-events-none select-none">Nailed</span>
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-10 sm:pt-16 pb-16 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center relative">
+    <section id="home" class="relative overflow-hidden min-h-0">
+      <span aria-hidden="true" class="hero-watermark outline-word font-serif absolute -top-4 left-0 text-[80px] md:text-[24vw] leading-none font-bold pointer-events-none select-none">Nailed</span>
+      <div class="hero-grid max-w-7xl mx-auto px-5 sm:px-8 pt-8 sm:pt-16 pb-10 sm:pb-16 grid lg:grid-cols-2 gap-8 lg:gap-8 items-center relative min-h-0">
         <!-- copy -->
         <div class="relative z-10 reveal visible">
           <p class="eyebrow mb-5">Nail Art · Gurugram</p>
@@ -330,15 +354,15 @@
             <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80';"
                  alt="Elegant manicured hands with soft pink nail art and a flower, premium salon lighting"
-                 class="w-full h-[480px] sm:h-[560px] object-cover" fetchpriority="high" decoding="async" />
+                 class="w-full h-auto aspect-[4/5] sm:aspect-auto sm:h-[560px] object-cover" fetchpriority="high" decoding="async" />
           </div>
           <!-- floating offer badge -->
-          <a href="#offers" class="floaty absolute top-8 -left-1 sm:left-2 flex items-center gap-3 rounded-2xl px-5 py-4 shadow-xl" style="background:#FFFDFB;border:1px solid rgba(217,185,155,.6);" aria-label="10 percent off first booking — view offer">
+          <a href="#offers" class="floaty absolute top-8 left-2 flex items-center gap-3 rounded-2xl px-5 py-4 shadow-xl" style="background:#FFFDFB;border:1px solid rgba(217,185,155,.6);" aria-label="10 percent off first booking — view offer">
             <span class="font-serif text-3xl font-semibold" style="color:#A05E63;">10% OFF</span>
             <span class="text-[10px] tracking-[0.24em] uppercase font-bold leading-relaxed">First<br />Booking</span>
           </a>
           <!-- floating hours chip -->
-          <div class="floaty-slow absolute bottom-10 -right-1 sm:right-4 rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3" style="background:#2B211D;color:#F7EDE5;">
+          <div class="floaty-slow absolute bottom-10 right-2 sm:right-4 rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3" style="background:#2B211D;color:#F7EDE5;">
             <i class="fa-regular fa-clock" style="color:#D9B99B;"></i>
             <span class="text-[11px] tracking-[0.18em] uppercase font-bold">10:30 AM – 8:30 PM<br /><span style="color:#D9B99B;">Open All Days</span></span>
           </div>
@@ -879,7 +903,7 @@
      style="background:#25D366;"><i class="fa-brands fa-whatsapp"></i></a>
 
   <!-- ══════════ MOBILE BOOKING BAR ══════════ -->
-  <div id="mobileBar" class="md:hidden fixed bottom-0 inset-x-0 z-50 px-4 pt-2" style="background:linear-gradient(to top,rgba(251,246,241,.97) 70%,transparent);">
+  <div id="mobileBar" class="md:hidden fixed bottom-4 left-4 right-4 z-50" style="background:transparent;">
     <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment."
        target="_blank" rel="noopener" class="flex items-center justify-center gap-3 w-full rounded-2xl py-4 text-sm font-bold tracking-[0.18em] uppercase text-white shadow-2xl active:scale-[.98] transition" style="background:#2B211D;">
       <i class="fa-brands fa-whatsapp text-xl" style="color:#25D366;"></i> Book Your Appointment
