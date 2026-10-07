@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nailed It Hub | Premium Nail Salon in Sector 23 Gurugram</title>
+  <meta name="description" content="Nailed It Hub is a complete nail design hub in Sector 23 HUDA Market, Gurugram offering acrylic extensions, gel extensions, French manicure, chrome nails, 3D nail art, bridal nails and more." />
+  <meta name="keywords" content="nail salon in Gurugram, nail extensions in Gurugram, nail art in Gurugram, Sector 23 Gurugram nail salon, acrylic nails Gurugram, gel extensions Gurugram, bridal nail art Gurugram" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#FBF6F1" />
+  <!-- TODO: replace with the live domain when deployed -->
+  <link rel="canonical" href="https://nailedithub.in/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nailed It Hub | A Complete Nail Design Hub — Sector 23, Gurugram" />
+  <meta property="og:description" content="Premium nail extensions, art and beauty treatments in Sector 23 HUDA Market, Gurugram. Open all days, 10:30 AM – 8:30 PM." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="en_IN" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nailed It Hub | Premium Nail Salon in Sector 23 Gurugram" />
+  <meta name="twitter:description" content="A complete nail design hub — acrylic & gel extensions, French, chrome, 3D, cat-eye and bridal nail art in Gurugram." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=80" />
+
+  <link rel="icon" type="image/jpeg" href="naillogo.jpg" />
+  <link rel="apple-touch-icon" href="naillogo.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN — no build step needed, open index.html directly) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FBF6F1',
+            cream: '#F7EDE5',
+            nude: '#EFDCD0',
+            blush: '#F4CFC5',
+            rosemist: '#C08A80',
+            rosedeep: '#A05E63',
+            champagne: '#D9B99B',
+            mauve: '#7A5C5E',
+            cocoa: '#2B211D',
+            bark: '#4A3A34'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Manrope', 'Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Local Business Schema (only verified info — no fake ratings/prices) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Nailed It Hub",
+    "slogan": "A Complete Nail Design Hub",
+    "image": "naillogo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sector 23 HUDA Market",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91 9810985771",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:30",
+      "closes": "20:30"
+    }],
+    "sameAs": ["https://www.instagram.com/nailedit_hub/"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --ivory:#FBF6F1; --cream:#F7EDE5; --nude:#EFDCD0; --blush:#F4CFC5;
+      --rose:#C08A80; --rosedeep:#A05E63; --champagne:#D9B99B;
+      --mauve:#7A5C5E; --cocoa:#2B211D; --bark:#4A3A34;
+    }
+    *{ -webkit-tap-highlight-color: transparent; }
+    html{ scroll-behavior:smooth; }
+    body{ font-family:'Manrope',system-ui,sans-serif; background:var(--ivory); color:var(--cocoa); overflow-x:hidden; }
+    ::selection{ background:var(--blush); color:var(--cocoa); }
+    section{ scroll-margin-top:96px; }
+    .font-serif{ font-family:'Playfair Display','Cormorant Garamond',Georgia,serif; }
+    .font-script{ font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; }
+    .eyebrow{ text-transform:uppercase; letter-spacing:.32em; font-size:.68rem; font-weight:700; color:var(--rosedeep); }
+    .hairline{ height:1px; background:linear-gradient(90deg,transparent,var(--champagne),transparent); }
+
+    /* ---------- navbar ---------- */
+    #navbar{ transition:background .35s ease, box-shadow .35s ease, backdrop-filter .35s ease; }
+    #navbar.scrolled{ background:rgba(251,246,241,.86); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); box-shadow:0 10px 40px -18px rgba(43,33,29,.25); }
+    .nav-link{ position:relative; font-size:.78rem; letter-spacing:.18em; font-weight:600; color:var(--bark); text-transform:uppercase; }
+    .nav-link::after{ content:''; position:absolute; left:0; bottom:-6px; height:1px; width:0; background:var(--rosedeep); transition:width .3s ease; }
+    .nav-link:hover::after,.nav-link.active::after{ width:100%; }
+    .logo-frame{ width:48px; height:48px; border-radius:15px; overflow:hidden; flex:none;
+      border:1px solid rgba(217,185,155,.9); box-shadow:0 8px 22px -10px rgba(43,33,29,.45); background:#0d0b0b; }
+    .logo-frame img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .logo-frame.lg{ width:76px; height:76px; border-radius:20px; }
+
+    /* ---------- buttons ---------- */
+    .btn{ display:inline-flex; align-items:center; gap:.65rem; font-weight:700; letter-spacing:.14em; font-size:.74rem; text-transform:uppercase;
+      padding:1rem 1.9rem; border-radius:999px; transition:transform .3s ease, box-shadow .3s ease, background .3s ease, color .3s ease; }
+    .btn .arr{ transition:transform .3s ease; }
+    .btn:hover .arr{ transform:translateX(5px); }
+    .btn-dark{ background:var(--cocoa); color:var(--ivory); box-shadow:0 18px 34px -16px rgba(43,33,29,.55); }
+    .btn-dark:hover{ background:var(--rosedeep); transform:translateY(-2px); }
+    .btn-line{ border:1px solid rgba(43,33,29,.28); color:var(--cocoa); background:transparent; }
+    .btn-line:hover{ border-color:var(--cocoa); background:var(--cocoa); color:var(--ivory); transform:translateY(-2px); }
+    .btn-rose{ background:var(--rosedeep); color:#fff; box-shadow:0 18px 34px -16px rgba(160,94,99,.6); }
+    .btn-rose:hover{ background:var(--cocoa); transform:translateY(-2px); }
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+      outline:2px solid var(--rosedeep); outline-offset:3px; border-radius:6px; }
+
+    /* ---------- hero decor ---------- */
+    .arch{ border-radius:999px 999px 28px 28px; }
+    .outline-word{ -webkit-text-stroke:1px rgba(160,94,99,.28); color:transparent; user-select:none; }
+    @keyframes floaty{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-12px);} }
+    .floaty{ animation:floaty 6s ease-in-out infinite; }
+    .floaty-slow{ animation:floaty 9s ease-in-out infinite; }
+    @keyframes spinSlow{ to{ transform:rotate(360deg);} }
+    .spin-slow{ animation:spinSlow 22s linear infinite; }
+
+    /* marquee */
+    .marquee{ overflow:hidden; white-space:nowrap; }
+    .marquee-track{ display:inline-flex; gap:3rem; padding-right:3rem; animation:marquee 30s linear infinite; }
+    @keyframes marquee{ to{ transform:translateX(-50%);} }
+
+    /* ---------- reveal on scroll ---------- */
+    .reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s ease, transform .8s cubic-bezier(.22,.61,.36,1); }
+    .reveal.visible{ opacity:1; transform:none; }
+    .reveal-d1{ transition-delay:.1s;} .reveal-d2{ transition-delay:.2s;} .reveal-d3{ transition-delay:.3s;}
+
+    /* ---------- cards ---------- */
+    .lift{ transition:transform .4s ease, box-shadow .4s ease, border-color .4s ease; }
+    .lift:hover{ transform:translateY(-8px); box-shadow:0 30px 60px -28px rgba(122,92,94,.45); border-color:var(--champagne); }
+    .svc-icon{ transition:transform .4s ease, background .4s ease, color .4s ease; }
+    .lift:hover .svc-icon{ transform:scale(1.08) rotate(-6deg); background:var(--cocoa); color:var(--blush); }
+    .view-link .arr{ transition:transform .3s ease; }
+    .view-link:hover .arr{ transform:translateX(6px); }
+
+    /* ---------- gallery ---------- */
+    .masonry{ columns:1; column-gap:1.25rem; }
+    @media(min-width:640px){ .masonry{ columns:2; } }
+    @media(min-width:1024px){ .masonry{ columns:3; } }
+    .g-item{ break-inside:avoid; margin-bottom:1.25rem; }
+    .g-frame{ position:relative; overflow:hidden; border-radius:20px; }
+    .g-frame img{ transition:transform .8s cubic-bezier(.22,.61,.36,1); display:block; width:100%; }
+    .g-frame:hover img{ transform:scale(1.07); }
+    .g-veil{ position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:1.1rem;
+      background:linear-gradient(to top, rgba(43,33,29,.72), rgba(43,33,29,.05) 55%, transparent);
+      opacity:0; transition:opacity .45s ease; }
+    .g-frame:hover .g-veil{ opacity:1; }
+    .g-item.hide{ display:none; }
+    .chip{ font-size:.7rem; letter-spacing:.16em; font-weight:700; text-transform:uppercase; padding:.55rem 1.1rem;
+      border-radius:999px; border:1px solid rgba(43,33,29,.2); color:var(--bark); transition:all .3s ease; }
+    .chip:hover{ border-color:var(--cocoa); }
+    .chip.on{ background:var(--cocoa); color:var(--ivory); border-color:var(--cocoa); }
+
+    /* ---------- price menu ---------- */
+    .dots{ flex:1 1 auto; border-bottom:1px dotted rgba(122,92,94,.55); margin:0 .8rem; transform:translateY(-5px); min-width:2rem; }
+
+    /* ---------- testimonials ---------- */
+    .t-slide{ position:absolute; inset:0; opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; pointer-events:none; }
+    .t-slide.on{ opacity:1; transform:none; pointer-events:auto; position:relative; }
+    .t-dot{ width:8px; height:8px; border-radius:999px; background:rgba(43,33,29,.2); transition:all .3s ease; }
+    .t-dot.on{ width:28px; background:var(--rosedeep); }
+
+    /* ---------- forms ---------- */
+    .field{ width:100%; background:#fff; border:1px solid rgba(43,33,29,.16); border-radius:14px; padding:.9rem 1.1rem;
+      font-size:.92rem; color:var(--cocoa); transition:border-color .3s ease, box-shadow .3s ease; }
+    .field:focus{ border-color:var(--rosedeep); box-shadow:0 0 0 4px rgba(192,138,128,.18); outline:none; }
+    .field.err{ border-color:#c0392b; box-shadow:0 0 0 4px rgba(192,57,43,.12); }
+    label.flabel{ font-size:.68rem; letter-spacing:.2em; font-weight:700; text-transform:uppercase; color:var(--mauve); }
+
+    /* ---------- whatsapp ---------- */
+    @keyframes waPulse{ 0%{ box-shadow:0 0 0 0 rgba(37,211,102,.45);} 70%{ box-shadow:0 0 0 18px rgba(37,211,102,0);} 100%{ box-shadow:0 0 0 0 rgba(37,211,102,0);} }
+    .wa-pulse{ animation:waPulse 2.6s ease-out infinite; }
+
+    /* mobile menu */
+    #mobileMenu{ transition:opacity .35s ease, transform .35s ease; transform-origin:top; }
+    #mobileMenu.hiddenMenu{ opacity:0; transform:translateY(-12px); pointer-events:none; }
+
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+      *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+      .reveal{ opacity:1; transform:none; }
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-cocoa focus:text-ivory focus:px-4 focus:py-2 focus:rounded-full" style="background:#2B211D;color:#FBF6F1;">Skip to content</a>
+
+  <!-- ══════════ TOP MICRO-BAR ══════════ -->
+  <div class="text-center text-[11px] tracking-[0.22em] uppercase font-semibold px-4 py-2" style="background:#2B211D;color:#EFDCD0;">
+    Open All Days &nbsp;·&nbsp; 10:30 AM – 8:30 PM &nbsp;·&nbsp; Sector 23 HUDA Market, Gurugram
+  </div>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <header id="navbar" class="sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4 px-5 sm:px-8 py-4" aria-label="Primary">
+      <a href="#home" class="flex items-center gap-3" aria-label="Nailed It Hub — home">
+        <!-- REAL client logo (naillogo.jpg) — original artwork preserved, framed only -->
+        <span class="logo-frame"><img src="naillogo.jpg" alt="Nailed It Hub logo — Nailed It, a complete nail design hub" fetchpriority="high" /></span>
+        <span class="leading-tight">
+          <span class="block font-serif font-semibold tracking-[0.14em] text-[15px] sm:text-base">NAILED IT HUB</span>
+          <span class="block text-[9px] tracking-[0.3em] uppercase" style="color:#7A5C5E;">A Complete Nail Design Hub</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-9">
+        <a href="#home" class="nav-link" data-nav="home">Home</a>
+        <a href="#about" class="nav-link" data-nav="about">About</a>
+        <a href="#services" class="nav-link" data-nav="services">Services</a>
+        <a href="#gallery" class="nav-link" data-nav="gallery">Gallery</a>
+        <a href="#offers" class="nav-link" data-nav="offers">Offers</a>
+        <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment."
+           target="_blank" rel="noopener" class="btn btn-dark !py-3 !px-6 hidden sm:inline-flex">
+          Book Appointment <span class="arr">→</span>
+        </a>
+        <button id="menuBtn" class="lg:hidden w-11 h-11 rounded-full flex items-center justify-center border border-cocoa/20"
+                aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <i id="menuIcon" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="hiddenMenu lg:hidden mx-4 mb-4 rounded-3xl p-6 shadow-2xl" style="background:#FFFDFB;border:1px solid rgba(217,185,155,.5);" aria-hidden="true">
+      <div class="flex flex-col gap-1 text-sm font-semibold tracking-[0.16em] uppercase">
+        <a href="#home" class="mnav py-3 border-b border-cocoa/10">Home</a>
+        <a href="#about" class="mnav py-3 border-b border-cocoa/10">About</a>
+        <a href="#services" class="mnav py-3 border-b border-cocoa/10">Services</a>
+        <a href="#gallery" class="mnav py-3 border-b border-cocoa/10">Gallery</a>
+        <a href="#offers" class="mnav py-3 border-b border-cocoa/10">Offers</a>
+        <a href="#contact" class="mnav py-3">Contact</a>
+      </div>
+      <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment."
+         target="_blank" rel="noopener" class="btn btn-dark w-full justify-center mt-5">Book Appointment <span class="arr">→</span></a>
+      <p class="text-center text-xs mt-4 tracking-widest uppercase" style="color:#7A5C5E;">10:30 AM – 8:30 PM · Open All Days</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ══════════ HERO ══════════ -->
+    <section id="home" class="relative overflow-hidden">
+      <span aria-hidden="true" class="outline-word font-serif absolute -top-4 left-0 text-[24vw] leading-none font-bold pointer-events-none select-none">Nailed</span>
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-10 sm:pt-16 pb-16 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center relative">
+        <!-- copy -->
+        <div class="relative z-10 reveal visible">
+          <p class="eyebrow mb-5">Nail Art · Gurugram</p>
+          <p class="text-[11px] tracking-[0.4em] uppercase font-bold mb-4" style="color:#7A5C5E;">Nail Art • Beauty • Self Expression</p>
+          <h1 class="font-serif font-medium text-[2.7rem] leading-[1.05] sm:text-6xl xl:text-[4.4rem]">
+            A Complete<br />Nail Design <em class="font-script font-medium" style="color:#A05E63;">Hub.</em>
+          </h1>
+          <p class="mt-6 text-[15px] sm:text-base leading-relaxed max-w-md" style="color:#4A3A34;">
+            Where precision meets creativity. Discover premium nail extensions, art and beauty
+            treatments designed to make every detail feel uniquely yours.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment."
+               target="_blank" rel="noopener" class="btn btn-dark">Book Appointment <span class="arr">→</span></a>
+            <a href="#services" class="btn btn-line">Explore Services <span class="arr">→</span></a>
+          </div>
+          <div class="mt-9 flex flex-wrap items-center gap-x-7 gap-y-3 text-[12px] tracking-[0.14em] uppercase font-semibold" style="color:#7A5C5E;">
+            <span><i class="fa-regular fa-clock mr-2"></i>Open All Days</span>
+            <span><i class="fa-solid fa-location-dot mr-2"></i>Sector 23, Gurugram</span>
+            <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="hover:text-cocoa" style="color:#A05E63;"><i class="fa-brands fa-instagram mr-2"></i>@nailedit_hub</a>
+          </div>
+        </div>
+
+        <!-- editorial image -->
+        <div class="relative reveal visible reveal-d1">
+          <div class="arch overflow-hidden shadow-2xl mx-auto max-w-[420px]" style="box-shadow:0 50px 90px -40px rgba(122,92,94,.5);">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80';"
+                 alt="Elegant manicured hands with soft pink nail art and a flower, premium salon lighting"
+                 class="w-full h-[480px] sm:h-[560px] object-cover" fetchpriority="high" />
+          </div>
+          <!-- floating offer badge -->
+          <a href="#offers" class="floaty absolute top-8 -left-1 sm:left-2 flex items-center gap-3 rounded-2xl px-5 py-4 shadow-xl" style="background:#FFFDFB;border:1px solid rgba(217,185,155,.6);" aria-label="10 percent off first booking — view offer">
+            <span class="font-serif text-3xl font-semibold" style="color:#A05E63;">10% OFF</span>
+            <span class="text-[10px] tracking-[0.24em] uppercase font-bold leading-relaxed">First<br />Booking</span>
+          </a>
+          <!-- floating hours chip -->
+          <div class="floaty-slow absolute bottom-10 -right-1 sm:right-4 rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3" style="background:#2B211D;color:#F7EDE5;">
+            <i class="fa-regular fa-clock" style="color:#D9B99B;"></i>
+            <span class="text-[11px] tracking-[0.18em] uppercase font-bold">10:30 AM – 8:30 PM<br /><span style="color:#D9B99B;">Open All Days</span></span>
+          </div>
+          <!-- rotating stamp -->
+          <div class="absolute -bottom-6 left-6 w-24 h-24 hidden sm:flex items-center justify-center" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="spin-slow absolute inset-0 w-full h-full">
+              <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" /></defs>
+              <text style="font-size:10.5px;letter-spacing:2.5px;font-weight:700;fill:#7A5C5E;"><textPath href="#circ">NAILED IT HUB • GURUGRAM • </textPath></text>
+            </svg>
+            <i class="fa-solid fa-gem" style="color:#A05E63;"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- marquee -->
+      <div class="marquee py-4 border-y" style="border-color:rgba(217,185,155,.5);background:#F7EDE5;" aria-hidden="true">
+        <div class="marquee-track font-serif text-lg tracking-[0.2em] uppercase" style="color:#7A5C5E;">
+          <span>French Tips</span><span>·</span><span>Chrome</span><span>·</span><span>Cat-Eye</span><span>·</span><span>3D Art</span><span>·</span><span>Bridal</span><span>·</span><span>Gel Extensions</span><span>·</span><span>Acrylics</span><span>·</span>
+          <span>French Tips</span><span>·</span><span>Chrome</span><span>·</span><span>Cat-Eye</span><span>·</span><span>3D Art</span><span>·</span><span>Bridal</span><span>·</span><span>Gel Extensions</span><span>·</span><span>Acrylics</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ INTRO / BRAND STATEMENT ══════════ -->
+    <section id="experience" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <div class="rounded-[28px] overflow-hidden lift" style="border:1px solid rgba(217,185,155,.5);">
+            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=900&q=80"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80';"
+                 alt="Close-up of glossy nude-pink manicured nails in soft studio light" loading="lazy"
+                 class="w-full h-[380px] sm:h-[460px] object-cover" />
+          </div>
+        </div>
+        <div class="reveal order-1 lg:order-2">
+          <p class="eyebrow mb-4">The Nailed It Hub Experience</p>
+          <h2 class="font-serif text-4xl sm:text-5xl leading-tight font-medium">Not just nails.<br /><em class="font-script" style="color:#A05E63;">A little more you.</em></h2>
+          <p class="mt-6 leading-relaxed" style="color:#4A3A34;">Nailed It Hub is a complete nail design destination in Gurugram, created for women who love beautiful details, creative designs and polished self-expression.</p>
+          <div class="mt-9 grid grid-cols-3 gap-4 max-w-md">
+            <div class="rounded-2xl p-4 text-center" style="background:#F7EDE5;">
+              <p class="font-serif text-3xl font-semibold"><span data-count="11">0</span>+</p>
+              <p class="text-[10px] tracking-[0.22em] uppercase font-bold mt-1" style="color:#7A5C5E;">Services</p>
+            </div>
+            <div class="rounded-2xl p-4 text-center" style="background:#F7EDE5;">
+              <p class="font-serif text-3xl font-semibold">7</p>
+              <p class="text-[10px] tracking-[0.22em] uppercase font-bold mt-1" style="color:#7A5C5E;">Days Open</p>
+            </div>
+            <div class="rounded-2xl p-4 text-center" style="background:#F7EDE5;">
+              <p class="font-serif text-lg font-semibold leading-snug pt-1">10:30 – 8:30</p>
+              <p class="text-[10px] tracking-[0.22em] uppercase font-bold mt-1" style="color:#7A5C5E;">Every Day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ ABOUT ══════════ -->
+    <section id="about" class="py-20 sm:py-28" style="background:#2B211D;color:#F7EDE5;">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+        <div class="reveal">
+          <p class="eyebrow mb-4" style="color:#D9B99B;">About the Studio</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-medium leading-tight">Where Design<br />Meets <em class="font-script" style="color:#F4CFC5;">Detail.</em></h2>
+          <p class="mt-6 leading-relaxed text-[15px]" style="color:#EFDCD0;">Nailed It Hub is a complete nail design hub located in Sector 23 HUDA Market, Gurugram — a calm, comfortable space dedicated entirely to nails.</p>
+          <ul class="mt-7 grid sm:grid-cols-2 gap-x-6 gap-y-4 text-sm">
+            <li class="flex gap-3"><i class="fa-solid fa-check mt-1" style="color:#D9B99B;"></i>Creativity-first, personalized designs</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check mt-1" style="color:#D9B99B;"></i>Carefully maintained hygiene</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check mt-1" style="color:#D9B99B;"></i>Attention to shape &amp; finish</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check mt-1" style="color:#D9B99B;"></i>Modern, on-trend techniques</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check mt-1" style="color:#D9B99B;"></i>Relaxed, comfortable experience</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check mt-1" style="color:#D9B99B;"></i>Designs tailored to you</li>
+          </ul>
+          <blockquote class="mt-9 pl-6 border-l-2" style="border-color:#D9B99B;">
+            <p class="font-script text-2xl sm:text-3xl" style="color:#F4CFC5;">“Every nail is a tiny canvas.”</p>
+          </blockquote>
+          <a href="#booking" class="btn mt-9" style="background:#F4CFC5;color:#2B211D;">Reserve Your Chair <span class="arr">→</span></a>
+        </div>
+        <div class="reveal reveal-d1 relative">
+          <div class="rounded-[28px] overflow-hidden" style="border:1px solid rgba(217,185,155,.35);">
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=80"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80';"
+                 alt="Elegant French-tip manicure on a relaxed hand, editorial beauty photography" loading="lazy"
+                 class="w-full h-[420px] sm:h-[520px] object-cover" />
+          </div>
+          <div class="absolute -bottom-6 -left-2 sm:left-8 rounded-2xl overflow-hidden shadow-2xl w-44 sm:w-56 floaty" style="border:4px solid #2B211D;">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=500&q=80"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=80';"
+                 alt="Classic glossy red manicure close-up" loading="lazy" class="w-full h-40 sm:h-48 object-cover" />
+          </div>
+          <div class="absolute top-6 -right-2 sm:right-6 rounded-full px-5 py-2 text-[10px] tracking-[0.24em] uppercase font-bold shadow-lg" style="background:#F4CFC5;color:#2B211D;">Sector 23 · Gurugram</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SERVICES ══════════ -->
+    <section id="services" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="eyebrow mb-4">What We Do</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-medium">Signature <em class="font-script" style="color:#A05E63;">Services</em></h2>
+        <p class="mt-4" style="color:#4A3A34;">From timeless French tips to statement-making nail art.</p>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- card template x11 -->
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-gem"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Acrylic Nail Extensions</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Strong, sculpted length with a flawless shape that lasts.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Acrylic%20Nail%20Extensions.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-droplet"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Gel Extensions</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Lightweight, glossy extensions with a natural feel.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Gel%20Extensions.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-feather"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">French Manicure</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Timeless white tips with a clean, elegant finish.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20French%20Manicure.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-star"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Chrome Nails</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Mirror-shine metallic finishes in every mood and shade.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Chrome%20Nails.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-shapes"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">3D Nail Art</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Sculpted charms, textures and statement details.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%203D%20Nail%20Art.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-eye"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Cat-eye Nails</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Magnetic shimmer with depth, dimension and movement.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Cat-eye%20Nails.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-ring"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Bridal Nail Art</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Detailed, photo-ready nails designed for your big day.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Bridal%20Nail%20Art.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-shield-halved"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Nail Extension Removal</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Safe, gentle removal that protects your natural nails.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Extension%20Removal.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-spa"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Manicure / Pedicure</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Classic care rituals for polished hands and feet.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Manicure%20%2F%20Pedicure.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-hand-sparkles"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Nail Buffing</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Smoothing, shine and natural-nail refinement.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Nail%20Buffing.">View service <span class="arr">→</span></a>
+        </article>
+        <article class="lift reveal rounded-3xl p-7 bg-white" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="svc-icon w-12 h-12 rounded-2xl inline-flex items-center justify-center text-lg" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-palette"></i></span>
+          <h3 class="font-serif text-xl mt-5 font-semibold">Mehndi Design</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color:#4A3A34;">Intricate henna artistry for festive moments.</p>
+          <p class="text-xs tracking-[0.18em] uppercase font-bold mt-4" style="color:#7A5C5E;">Starting from ₹____</p>
+          <a class="view-link inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-bold mt-3" style="color:#A05E63;" target="_blank" rel="noopener" href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%27d%20like%20to%20know%20more%20about%20Mehndi%20Design.">View service <span class="arr">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══════════ PRICE MENU ══════════ -->
+    <section id="menu" class="py-20 sm:py-28" style="background:#F7EDE5;">
+      <div class="max-w-4xl mx-auto px-5 sm:px-8">
+        <div class="text-center reveal">
+          <p class="eyebrow mb-4">Transparent Pricing</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-medium">The <em class="font-script" style="color:#A05E63;">Menu</em></h2>
+          <p class="mt-4 text-sm" style="color:#4A3A34;">Transparent pricing for your next nail moment.</p>
+        </div>
+
+        <div class="mt-12 rounded-[28px] p-7 sm:p-12 reveal" style="background:#FFFDFB;border:1px solid rgba(217,185,155,.55);box-shadow:0 40px 80px -50px rgba(122,92,94,.4);">
+          <h3 class="text-[11px] tracking-[0.34em] uppercase font-bold text-center" style="color:#A05E63;">— Nail Extensions —</h3>
+          <ul class="mt-6 space-y-5 text-[15px]">
+            <li class="flex items-end"><span class="font-semibold">Acrylic Nail Extensions</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+            <li class="flex items-end"><span class="font-semibold">Gel Extensions</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+          </ul>
+          <div class="hairline my-9"></div>
+          <h3 class="text-[11px] tracking-[0.34em] uppercase font-bold text-center" style="color:#A05E63;">— Nail Art —</h3>
+          <ul class="mt-6 space-y-5 text-[15px]">
+            <li class="flex items-end"><span class="font-semibold">French Manicure</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+            <li class="flex items-end"><span class="font-semibold">Chrome Nails</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+            <li class="flex items-end"><span class="font-semibold">3D Nail Art</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+            <li class="flex items-end"><span class="font-semibold">Cat-eye Nails</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+            <li class="flex items-end"><span class="font-semibold">Bridal Nail Art</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+          </ul>
+          <div class="hairline my-9"></div>
+          <h3 class="text-[11px] tracking-[0.34em] uppercase font-bold text-center" style="color:#A05E63;">— Nail Care —</h3>
+          <ul class="mt-6 space-y-5 text-[15px]">
+            <li class="flex items-end"><span class="font-semibold">Extension Removal</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+            <li class="flex items-end"><span class="font-semibold">Manicure / Pedicure</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+            <li class="flex items-end"><span class="font-semibold">Nail Buffing</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+          </ul>
+          <div class="hairline my-9"></div>
+          <h3 class="text-[11px] tracking-[0.34em] uppercase font-bold text-center" style="color:#A05E63;">— Art —</h3>
+          <ul class="mt-6 space-y-5 text-[15px]">
+            <li class="flex items-end"><span class="font-semibold">Mehndi Design</span><span class="dots"></span><span class="font-serif font-semibold whitespace-nowrap">₹____</span></li>
+          </ul>
+          <p class="text-center text-xs mt-9 leading-relaxed" style="color:#7A5C5E;">Prices above are placeholders — final pricing depends on design &amp; length.<br />Message us for an exact quote.</p>
+          <div class="text-center mt-6">
+            <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20please%20share%20your%20price%20list."
+               target="_blank" rel="noopener" class="btn btn-dark">Ask for Pricing <span class="arr">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ GALLERY ══════════ -->
+    <section id="gallery" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 reveal">
+        <div>
+          <p class="eyebrow mb-4">Portfolio</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-medium">Nail Art, <em class="font-script" style="color:#A05E63;">In The Details.</em></h2>
+        </div>
+        <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="btn btn-line flex-none">View Instagram <span class="arr">→</span></a>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-2.5 reveal" role="group" aria-label="Filter gallery">
+        <button class="chip on" data-filter="all">All</button>
+        <button class="chip" data-filter="french">French &amp; Chrome</button>
+        <button class="chip" data-filter="art">Art &amp; 3D</button>
+        <button class="chip" data-filter="nude">Nudes &amp; Pinks</button>
+        <button class="chip" data-filter="bridal">Bridal &amp; Minimal</button>
+      </div>
+
+      <div id="galleryGrid" class="masonry mt-8">
+        <figure class="g-item reveal" data-cat="nude">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80';" alt="Soft pink almond-shaped nails with delicate nail art, close-up" loading="lazy" class="h-96 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Pink Nails</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="french">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80';" alt="Classic French-tip manicure with crisp white tips" loading="lazy" class="h-72 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>French Tips</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="nude">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80';" alt="Glossy nude manicure in natural daylight, minimalist nail look" loading="lazy" class="h-80 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Nude Nails</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="art">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80';" alt="Detailed pink nail art with glossy finish, salon close-up" loading="lazy" class="h-96 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Nail Art Detail</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="bridal">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80';" alt="Timeless glossy red manicure, bridal-ready classic" loading="lazy" class="h-72 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Classic Red</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="french">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=800&q=80';" alt="Acrylic nail extension being shaped during a salon appointment" loading="lazy" class="h-80 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Acrylic Extensions</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="art">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80';" alt="Nail polish application with artistic brushes, creative studio moment" loading="lazy" class="h-72 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Cat-eye &amp; Chrome</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="bridal">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1614806687007-2215a9db3b1b?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80';" alt="Elegant bridal-style manicure with soft shimmer" loading="lazy" class="h-96 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Bridal Shimmer</span></figcaption></div>
+        </figure>
+        <figure class="g-item reveal" data-cat="nude">
+          <div class="g-frame"><img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=800&q=80';" alt="Curated nail polish shades in blush and nude tones" loading="lazy" class="h-72 object-cover" />
+            <figcaption class="g-veil"><span class="text-white text-xs tracking-[0.22em] uppercase font-bold"><i class="fa-brands fa-instagram mr-2"></i>Shade Stories</span></figcaption></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ══════════ INSTAGRAM ══════════ -->
+    <section id="instagram" class="py-20 sm:py-24" style="background:#2B211D;color:#F7EDE5;">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8 text-center">
+        <p class="eyebrow reveal" style="color:#D9B99B;">Instagram</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-medium mt-4 reveal">Follow The <em class="font-script" style="color:#F4CFC5;">Art</em></h2>
+        <p class="font-serif text-2xl mt-3 reveal" style="color:#D9B99B;">@nailedit_hub</p>
+        <p class="mt-4 text-sm max-w-xl mx-auto reveal" style="color:#EFDCD0;">See our latest nail designs, transformations and studio moments on Instagram.</p>
+        <div class="mt-9 grid grid-cols-2 sm:grid-cols-4 gap-3 reveal">
+          <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="rounded-2xl overflow-hidden group" aria-label="Open Nailed It Hub on Instagram">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=70" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=500&q=70';" alt="Pink nail art preview from Nailed It Hub Instagram" loading="lazy" class="w-full h-52 object-cover transition duration-700 group-hover:scale-110" /></a>
+          <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="rounded-2xl overflow-hidden group" aria-label="Open Nailed It Hub on Instagram">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=500&q=70" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=70';" alt="Nude manicure preview from Nailed It Hub Instagram" loading="lazy" class="w-full h-52 object-cover transition duration-700 group-hover:scale-110" /></a>
+          <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="rounded-2xl overflow-hidden group" aria-label="Open Nailed It Hub on Instagram">
+            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=500&q=70" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=70';" alt="Glossy nail detail preview from Nailed It Hub Instagram" loading="lazy" class="w-full h-52 object-cover transition duration-700 group-hover:scale-110" /></a>
+          <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="rounded-2xl overflow-hidden group" aria-label="Open Nailed It Hub on Instagram">
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=500&q=70" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=70';" alt="French tip preview from Nailed It Hub Instagram" loading="lazy" class="w-full h-52 object-cover transition duration-700 group-hover:scale-110" /></a>
+        </div>
+        <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="btn mt-9 reveal" style="background:#F4CFC5;color:#2B211D;"><i class="fa-brands fa-instagram"></i> Follow on Instagram <span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <!-- ══════════ WHY CHOOSE US ══════════ -->
+    <section id="why" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="eyebrow mb-4">The Difference</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-medium">Why Nail Lovers <em class="font-script" style="color:#A05E63;">Choose Us</em></h2>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="lift reveal rounded-3xl p-8 bg-white text-center" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="w-14 h-14 rounded-full inline-flex items-center justify-center text-xl" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-pump-soap"></i></span>
+          <h3 class="text-xs tracking-[0.28em] uppercase font-bold mt-5">Hygiene</h3>
+          <p class="text-sm mt-3 leading-relaxed" style="color:#4A3A34;">A clean and carefully maintained environment for every appointment.</p>
+        </div>
+        <div class="lift reveal reveal-d1 rounded-3xl p-8 bg-white text-center" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="w-14 h-14 rounded-full inline-flex items-center justify-center text-xl" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-pen-nib"></i></span>
+          <h3 class="text-xs tracking-[0.28em] uppercase font-bold mt-5">Expert Artists</h3>
+          <p class="text-sm mt-3 leading-relaxed" style="color:#4A3A34;">Detailed nail work with attention to shape, finish and design.</p>
+        </div>
+        <div class="lift reveal reveal-d2 rounded-3xl p-8 bg-white text-center" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="w-14 h-14 rounded-full inline-flex items-center justify-center text-xl" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-gem"></i></span>
+          <h3 class="text-xs tracking-[0.28em] uppercase font-bold mt-5">Trendy Designs</h3>
+          <p class="text-sm mt-3 leading-relaxed" style="color:#4A3A34;">From timeless French tips to modern chrome, cat-eye and 3D looks.</p>
+        </div>
+        <div class="lift reveal reveal-d3 rounded-3xl p-8 bg-white text-center" style="border:1px solid rgba(217,185,155,.45);">
+          <span class="w-14 h-14 rounded-full inline-flex items-center justify-center text-xl" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+          <h3 class="text-xs tracking-[0.28em] uppercase font-bold mt-5">Affordable</h3>
+          <p class="text-sm mt-3 leading-relaxed" style="color:#4A3A34;">Beautiful nail experiences without unnecessary luxury pricing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ OFFER ══════════ -->
+    <section id="offers" class="max-w-7xl mx-auto px-5 sm:px-8 pb-20 sm:pb-28">
+      <div class="reveal rounded-[32px] overflow-hidden grid lg:grid-cols-2" style="background:#F4CFC5;">
+        <div class="p-9 sm:p-14 flex flex-col justify-center">
+          <p class="text-[11px] tracking-[0.34em] uppercase font-bold" style="color:#7A5C5E;">Your First Booking</p>
+          <p class="font-serif font-semibold leading-none mt-3" style="font-size:clamp(3.5rem,8vw,5.5rem);color:#2B211D;">10% OFF</p>
+          <p class="mt-5 max-w-sm text-[15px] leading-relaxed" style="color:#4A3A34;">Ready for your next nail look? Book your first appointment and enjoy 10% off.</p>
+          <div class="mt-8">
+            <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub!%20I%20would%20like%20to%20claim%20my%2010%25%20off%20first%20booking%20offer."
+               target="_blank" rel="noopener" class="btn btn-dark">Claim Offer <span class="arr">→</span></a>
+          </div>
+          <p class="mt-5 text-[11px] tracking-[0.18em] uppercase font-semibold" style="color:#7A5C5E;">Show this at the studio · First visit</p>
+        </div>
+        <div class="relative min-h-[320px]">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80&sat=-15"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80';"
+               alt="Editorial close-up of blush-pink manicured nails" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
+          <div class="absolute inset-0" style="background:linear-gradient(100deg,#F4CFC5 0%,transparent 35%);"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ TESTIMONIALS (placeholders — replace with real reviews) ══════════ -->
+    <section id="testimonials" class="py-20 sm:py-28" style="background:#F7EDE5;">
+      <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+        <p class="eyebrow reveal mb-4">Kind Words</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-medium reveal">Loved By <em class="font-script" style="color:#A05E63;">Nail Lovers</em></h2>
+        <p class="text-xs mt-4 tracking-wide reveal" style="color:#7A5C5E;">Sample placeholders below — replace with real customer reviews.</p>
+
+        <div class="relative mt-10 reveal">
+          <div id="tWrap" class="rounded-[28px] p-9 sm:p-12 min-h-[300px] flex" style="background:#FFFDFB;border:1px solid rgba(217,185,155,.55);">
+            <!-- REPLACE WITH REAL REVIEW 1 -->
+            <figure class="t-slide on flex-col items-center justify-center text-center m-auto">
+              <span class="font-serif text-6xl leading-none" style="color:#D9B99B;">“</span>
+              <div class="text-sm tracking-[0.2em]" style="color:#D9B99B;" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="mt-4 font-script text-2xl leading-snug">Beautiful placeholder review — replace this with an actual customer review.</blockquote>
+              <figcaption class="mt-6 flex items-center gap-3 justify-center">
+                <span class="w-11 h-11 rounded-full inline-flex items-center justify-center font-serif font-semibold" style="background:#F4CFC5;color:#2B211D;">A</span>
+                <span class="text-left"><span class="block text-sm font-bold">Client Name</span><span class="block text-xs" style="color:#7A5C5E;">Service placeholder</span></span>
+              </figcaption>
+            </figure>
+            <!-- REPLACE WITH REAL REVIEW 2 -->
+            <figure class="t-slide flex-col items-center justify-center text-center m-auto">
+              <span class="font-serif text-6xl leading-none" style="color:#D9B99B;">“</span>
+              <div class="text-sm tracking-[0.2em]" style="color:#D9B99B;" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="mt-4 font-script text-2xl leading-snug">Beautiful placeholder review — replace this with an actual customer review.</blockquote>
+              <figcaption class="mt-6 flex items-center gap-3 justify-center">
+                <span class="w-11 h-11 rounded-full inline-flex items-center justify-center font-serif font-semibold" style="background:#F4CFC5;color:#2B211D;">B</span>
+                <span class="text-left"><span class="block text-sm font-bold">Client Name</span><span class="block text-xs" style="color:#7A5C5E;">Service placeholder</span></span>
+              </figcaption>
+            </figure>
+            <!-- REPLACE WITH REAL REVIEW 3 -->
+            <figure class="t-slide flex-col items-center justify-center text-center m-auto">
+              <span class="font-serif text-6xl leading-none" style="color:#D9B99B;">“</span>
+              <div class="text-sm tracking-[0.2em]" style="color:#D9B99B;" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="mt-4 font-script text-2xl leading-snug">Beautiful placeholder review — replace this with an actual customer review.</blockquote>
+              <figcaption class="mt-6 flex items-center gap-3 justify-center">
+                <span class="w-11 h-11 rounded-full inline-flex items-center justify-center font-serif font-semibold" style="background:#F4CFC5;color:#2B211D;">C</span>
+                <span class="text-left"><span class="block text-sm font-bold">Client Name</span><span class="block text-xs" style="color:#7A5C5E;">Service placeholder</span></span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="mt-6 flex items-center justify-center gap-4">
+            <button id="tPrev" class="w-11 h-11 rounded-full border border-cocoa/25 hover:bg-cocoa hover:text-ivory transition" aria-label="Previous review"><i class="fa-solid fa-arrow-left text-sm"></i></button>
+            <div class="flex gap-2" role="tablist" aria-label="Choose review">
+              <button class="t-dot on" data-i="0" aria-label="Review 1"></button>
+              <button class="t-dot" data-i="1" aria-label="Review 2"></button>
+              <button class="t-dot" data-i="2" aria-label="Review 3"></button>
+            </div>
+            <button id="tNext" class="w-11 h-11 rounded-full border border-cocoa/25 hover:bg-cocoa hover:text-ivory transition" aria-label="Next review"><i class="fa-solid fa-arrow-right text-sm"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ VISIT / LOCATION ══════════ -->
+    <section id="visit" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+      <div class="grid lg:grid-cols-2 gap-10 items-stretch">
+        <div class="reveal flex flex-col justify-center">
+          <p class="eyebrow mb-4">Find Us</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-medium">Visit Nailed <em class="font-script" style="color:#A05E63;">It Hub</em></h2>
+          <ul class="mt-8 space-y-5 text-[15px]">
+            <li class="flex gap-4"><span class="w-11 h-11 rounded-2xl flex-none inline-flex items-center justify-center" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-location-dot"></i></span>
+              <span><strong class="block text-xs tracking-[0.24em] uppercase" style="color:#7A5C5E;">Address</strong>Sector 23 HUDA Market, Gurugram, Haryana</span></li>
+            <li class="flex gap-4"><span class="w-11 h-11 rounded-2xl flex-none inline-flex items-center justify-center" style="background:#F7EDE5;color:#A05E63;"><i class="fa-regular fa-clock"></i></span>
+              <span><strong class="block text-xs tracking-[0.24em] uppercase" style="color:#7A5C5E;">Hours</strong>10:30 AM – 8:30 PM · Open All Days</span></li>
+            <li class="flex gap-4"><span class="w-11 h-11 rounded-2xl flex-none inline-flex items-center justify-center" style="background:#F7EDE5;color:#A05E63;"><i class="fa-solid fa-phone"></i></span>
+              <span><strong class="block text-xs tracking-[0.24em] uppercase" style="color:#7A5C5E;">Phone</strong>
+                <a href="tel:+919810985771" class="font-semibold hover:underline">9810985771</a> &nbsp;·&nbsp;
+                <a href="tel:+918076736022" class="font-semibold hover:underline">8076736022</a></span></li>
+          </ul>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://www.google.com/maps/search/?api=1&query=Sector+23+HUDA+Market+Gurugram+Haryana" target="_blank" rel="noopener" class="btn btn-dark">Get Directions <span class="arr">→</span></a>
+            <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn btn-line">Book on WhatsApp <span class="arr">→</span></a>
+          </div>
+        </div>
+        <div class="reveal reveal-d1 rounded-[28px] overflow-hidden min-h-[380px]" style="border:1px solid rgba(217,185,155,.55);box-shadow:0 40px 80px -50px rgba(122,92,94,.45);">
+          <iframe title="Map — Nailed It Hub, Sector 23 HUDA Market, Gurugram" src="https://www.google.com/maps?q=Sector%2023%20HUDA%20Market%2C%20Gurugram%2C%20Haryana&output=embed"
+                  class="w-full h-full min-h-[380px]" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ BOOKING + CONTACT ══════════ -->
+    <section id="booking" class="py-20 sm:py-28" style="background:#2B211D;color:#F7EDE5;">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-5 gap-10">
+        <!-- form -->
+        <div class="lg:col-span-3 reveal">
+          <p class="eyebrow" style="color:#D9B99B;">Reserve Your Chair</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-medium mt-4">Request an <em class="font-script" style="color:#F4CFC5;">Appointment</em></h2>
+          <p class="mt-4 text-sm" style="color:#EFDCD0;">Fill this in — we will open WhatsApp with your booking message ready to send. No account, no waiting.</p>
+          <form id="bookForm" class="mt-8 grid sm:grid-cols-2 gap-5 rounded-[28px] p-7 sm:p-9" style="background:#FFFDFB;color:#2B211D;" novalidate>
+            <div><label class="flabel" for="fName">Name *</label><input id="fName" class="field mt-2" type="text" placeholder="Your name" autocomplete="name" /></div>
+            <div><label class="flabel" for="fPhone">Phone *</label><input id="fPhone" class="field mt-2" type="tel" inputmode="tel" placeholder="98XXX XXXXX" autocomplete="tel" /></div>
+            <div><label class="flabel" for="fService">Service *</label>
+              <select id="fService" class="field mt-2">
+                <option value="">Select a service…</option>
+                <option>Acrylic Nail Extensions</option><option>Gel Extensions</option><option>French Manicure</option>
+                <option>Chrome Nails</option><option>3D Nail Art</option><option>Cat-eye Nails</option>
+                <option>Bridal Nail Art</option><option>Nail Extension Removal</option><option>Manicure / Pedicure</option>
+                <option>Nail Buffing</option><option>Mehndi Design</option><option>Not sure — need advice</option>
+              </select></div>
+            <div class="grid grid-cols-2 gap-4">
+              <div><label class="flabel" for="fDate">Date</label><input id="fDate" class="field mt-2" type="date" /></div>
+              <div><label class="flabel" for="fTime">Time</label><input id="fTime" class="field mt-2" type="time" /></div>
+            </div>
+            <div class="sm:col-span-2"><label class="flabel" for="fMsg">Message</label><textarea id="fMsg" class="field mt-2" rows="3" placeholder="Any design idea, occasion, or question…"></textarea></div>
+            <p id="formErr" class="sm:col-span-2 hidden text-sm font-semibold" style="color:#a93226;" role="alert">Please add your name, a valid 10-digit phone number and a service.</p>
+            <div class="sm:col-span-2">
+              <button type="submit" class="btn btn-rose w-full sm:w-auto justify-center"><i class="fa-brands fa-whatsapp text-base"></i> Request Appointment <span class="arr">→</span></button>
+            </div>
+          </form>
+        </div>
+        <!-- contact cards -->
+        <div id="contact" class="lg:col-span-2 reveal reveal-d1 flex flex-col gap-4">
+          <h3 class="font-serif text-2xl">Contact <em class="font-script" style="color:#F4CFC5;">Details</em></h3>
+          <a href="tel:+919810985771" class="rounded-2xl p-5 flex items-center gap-4 transition hover:-translate-y-1" style="background:rgba(247,237,229,.07);border:1px solid rgba(217,185,155,.3);">
+            <span class="w-12 h-12 rounded-2xl inline-flex items-center justify-center flex-none" style="background:#F4CFC5;color:#2B211D;"><i class="fa-solid fa-phone"></i></span>
+            <span><span class="block text-[10px] tracking-[0.28em] uppercase font-bold" style="color:#D9B99B;">Phone 1 — Tap to call</span><span class="block font-serif text-xl font-semibold mt-0.5">9810985771</span></span>
+          </a>
+          <a href="tel:+918076736022" class="rounded-2xl p-5 flex items-center gap-4 transition hover:-translate-y-1" style="background:rgba(247,237,229,.07);border:1px solid rgba(217,185,155,.3);">
+            <span class="w-12 h-12 rounded-2xl inline-flex items-center justify-center flex-none" style="background:#F4CFC5;color:#2B211D;"><i class="fa-solid fa-phone"></i></span>
+            <span><span class="block text-[10px] tracking-[0.28em] uppercase font-bold" style="color:#D9B99B;">Phone 2 — Tap to call</span><span class="block font-serif text-xl font-semibold mt-0.5">8076736022</span></span>
+          </a>
+          <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="rounded-2xl p-5 flex items-center gap-4 transition hover:-translate-y-1" style="background:rgba(247,237,229,.07);border:1px solid rgba(217,185,155,.3);">
+            <span class="w-12 h-12 rounded-2xl inline-flex items-center justify-center flex-none" style="background:#F4CFC5;color:#2B211D;"><i class="fa-brands fa-instagram"></i></span>
+            <span><span class="block text-[10px] tracking-[0.28em] uppercase font-bold" style="color:#D9B99B;">Instagram</span><span class="block font-serif text-xl font-semibold mt-0.5">@nailedit_hub</span></span>
+          </a>
+          <div class="rounded-2xl p-5 flex items-center gap-4" style="background:rgba(247,237,229,.07);border:1px solid rgba(217,185,155,.3);">
+            <span class="w-12 h-12 rounded-2xl inline-flex items-center justify-center flex-none" style="background:#F4CFC5;color:#2B211D;"><i class="fa-solid fa-location-dot"></i></span>
+            <span><span class="block text-[10px] tracking-[0.28em] uppercase font-bold" style="color:#D9B99B;">Location</span><span class="block text-sm font-semibold mt-0.5">Sector 23 HUDA Market, Gurugram, Haryana</span></span>
+          </div>
+          <div class="rounded-2xl p-5 flex items-center gap-4" style="background:rgba(247,237,229,.07);border:1px solid rgba(217,185,155,.3);">
+            <span class="w-12 h-12 rounded-2xl inline-flex items-center justify-center flex-none" style="background:#F4CFC5;color:#2B211D;"><i class="fa-regular fa-clock"></i></span>
+            <span><span class="block text-[10px] tracking-[0.28em] uppercase font-bold" style="color:#D9B99B;">Hours</span><span class="block text-sm font-semibold mt-0.5">10:30 AM – 8:30 PM · Open All Days</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="pt-16 pb-28 md:pb-8" style="background:#1D1512;color:#EFDCD0;">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-4">
+            <span class="logo-frame lg"><img src="naillogo.jpg" alt="Nailed It Hub logo" loading="lazy" /></span>
+            <span><span class="block font-serif font-semibold tracking-[0.14em] text-lg text-white">NAILED IT HUB</span>
+            <span class="block text-[10px] tracking-[0.3em] uppercase" style="color:#D9B99B;">A Complete Nail Design Hub</span></span>
+          </div>
+          <p class="mt-5 text-sm leading-relaxed max-w-sm" style="color:#CBB7AC;">Premium nail extensions, art and care in Sector 23 HUDA Market, Gurugram. Open all days, 10:30 AM – 8:30 PM.</p>
+          <a href="https://www.instagram.com/nailedit_hub/" target="_blank" rel="noopener" class="inline-flex items-center gap-3 mt-5 text-sm font-semibold hover:text-white" aria-label="Nailed It Hub on Instagram">
+            <span class="w-10 h-10 rounded-full inline-flex items-center justify-center" style="background:rgba(244,207,197,.15);color:#F4CFC5;"><i class="fa-brands fa-instagram"></i></span> @nailedit_hub
+          </a>
+        </div>
+        <nav aria-label="Footer">
+          <h3 class="text-[11px] tracking-[0.3em] uppercase font-bold" style="color:#D9B99B;">Explore</h3>
+          <ul class="mt-5 space-y-3 text-sm font-semibold">
+            <li><a href="#home" class="hover:text-white">Home</a></li>
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#services" class="hover:text-white">Services</a></li>
+            <li><a href="#gallery" class="hover:text-white">Gallery</a></li>
+            <li><a href="#offers" class="hover:text-white">Offers</a></li>
+            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="text-[11px] tracking-[0.3em] uppercase font-bold" style="color:#D9B99B;">Reach Us</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="tel:+919810985771" class="hover:text-white font-semibold">9810985771</a></li>
+            <li><a href="tel:+918076736022" class="hover:text-white font-semibold">8076736022</a></li>
+            <li style="color:#CBB7AC;">Sector 23 HUDA Market,<br />Gurugram, Haryana</li>
+            <li style="color:#CBB7AC;">10:30 AM – 8:30 PM · Open All Days</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hairline my-8" style="background:linear-gradient(90deg,transparent,rgba(217,185,155,.4),transparent);"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="color:#A68F83;">
+        <p>© <span id="year">2026</span> Nailed It Hub. All Rights Reserved.</p>
+        <!-- Subtle demo credit — GrowthSpare IT Solutions -->
+        <p class="opacity-60 hover:opacity-100 transition text-[11px] tracking-wide">Website by <a href="https://growthspareitsolutions.com/" target="_blank" rel="noopener" class="underline underline-offset-2">GrowthSpare IT Solutions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ FLOATING WHATSAPP (desktop) ══════════ -->
+  <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment."
+     target="_blank" rel="noopener" aria-label="Book on WhatsApp"
+     class="wa-pulse hidden md:flex fixed bottom-6 right-6 z-50 w-[60px] h-[60px] rounded-full items-center justify-center text-white text-3xl shadow-2xl hover:scale-110 transition"
+     style="background:#25D366;"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <!-- ══════════ MOBILE BOOKING BAR ══════════ -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-50 px-4 pb-4 pt-2" style="background:linear-gradient(to top,rgba(251,246,241,.97) 70%,transparent);">
+    <a href="https://wa.me/919810985771?text=Hi%20Nailed%20It%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment."
+       target="_blank" rel="noopener" class="flex items-center justify-center gap-3 w-full rounded-2xl py-4 text-sm font-bold tracking-[0.18em] uppercase text-white shadow-2xl active:scale-[.98] transition" style="background:#2B211D;">
+      <i class="fa-brands fa-whatsapp text-xl" style="color:#25D366;"></i> Book Your Appointment
+    </a>
+    <a href="tel:+919810985771" class="block text-center text-[11px] font-bold tracking-[0.2em] uppercase mt-2" style="color:#7A5C5E;" aria-label="Call 9810985771">Call: 9810985771</a>
+  </div>
+
+  <script>
+    (function(){
+      'use strict';
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* year */
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      /* navbar blur on scroll */
+      var nav = document.getElementById('navbar');
+      function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 24); }
+      window.addEventListener('scroll', onScroll, { passive:true }); onScroll();
+
+      /* mobile menu */
+      var btn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu'),
+          icon = document.getElementById('menuIcon'), open = false;
+      function setMenu(v){
+        open = v;
+        menu.classList.toggle('hiddenMenu', !v);
+        menu.setAttribute('aria-hidden', String(!v));
+        btn.setAttribute('aria-expanded', String(v));
+        btn.setAttribute('aria-label', v ? 'Close menu' : 'Open menu');
+        icon.className = v ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+      }
+      btn.addEventListener('click', function(){ setMenu(!open); });
+      menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
+
+      /* scroll reveal */
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal:not(.visible)').forEach(function(el){ io.observe(el); });
+
+      /* factual counter (11+ services only) */
+      var counted = false;
+      var cio = new IntersectionObserver(function(entries){
+        if(entries[0].isIntersecting && !counted){
+          counted = true;
+          var el = document.querySelector('[data-count]'), target = parseInt(el.getAttribute('data-count'),10), t0 = null;
+          if(reduceMotion){ el.textContent = target; return; }
+          function step(t){ if(!t0) t0 = t; var p = Math.min((t-t0)/1200,1); el.textContent = Math.round(target*p); if(p<1) requestAnimationFrame(step); }
+          requestAnimationFrame(step);
+          cio.disconnect();
+        }
+      }, { threshold:.5 });
+      var cEl = document.querySelector('[data-count]'); if(cEl) cio.observe(cEl);
+
+      /* active nav link */
+      var links = document.querySelectorAll('[data-nav]');
+      var nio = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){
+            links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('data-nav') === e.target.id); });
+          }
+        });
+      }, { rootMargin:'-40% 0px -55% 0px' });
+      ['home','about','services','gallery','offers','contact'].forEach(function(id){ var s=document.getElementById(id); if(s) nio.observe(s); });
+
+      /* gallery filter */
+      var chips = document.querySelectorAll('.chip'), items = document.querySelectorAll('.g-item');
+      chips.forEach(function(c){
+        c.addEventListener('click', function(){
+          chips.forEach(function(x){ x.classList.remove('on'); }); c.classList.add('on');
+          var f = c.getAttribute('data-filter');
+          items.forEach(function(it){ it.classList.toggle('hide', f !== 'all' && it.getAttribute('data-cat') !== f); });
+        });
+      });
+
+      /* testimonial slider */
+      var slides = Array.prototype.slice.call(document.querySelectorAll('.t-slide')),
+          dots = Array.prototype.slice.call(document.querySelectorAll('.t-dot')),
+          cur = 0, timer = null;
+      function show(i){
+        cur = (i + slides.length) % slides.length;
+        slides.forEach(function(s,k){ s.classList.toggle('on', k===cur); });
+        dots.forEach(function(d,k){ d.classList.toggle('on', k===cur); });
+      }
+      function auto(){ if(reduceMotion) return; clearInterval(timer); timer = setInterval(function(){ show(cur+1); }, 6000); }
+      document.getElementById('tNext').addEventListener('click', function(){ show(cur+1); auto(); });
+      document.getElementById('tPrev').addEventListener('click', function(){ show(cur-1); auto(); });
+      dots.forEach(function(d){ d.addEventListener('click', function(){ show(parseInt(d.getAttribute('data-i'),10)); auto(); }); });
+      auto();
+
+      /* booking form -> WhatsApp */
+      var form = document.getElementById('bookForm');
+      form.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        var name = document.getElementById('fName'), phone = document.getElementById('fPhone'),
+            svc = document.getElementById('fService'), date = document.getElementById('fDate'),
+            time = document.getElementById('fTime'), msg = document.getElementById('fMsg'),
+            err = document.getElementById('formErr');
+        [name, phone, svc].forEach(function(f){ f.classList.remove('err'); });
+        var digits = phone.value.replace(/\D/g,'').replace(/^91(?=\d{10}$)/,'');
+        var ok = name.value.trim().length >= 2 && digits.length === 10 && svc.value !== '';
+        if(!name.value.trim() || name.value.trim().length < 2) name.classList.add('err');
+        if(digits.length !== 10) phone.classList.add('err');
+        if(!svc.value) svc.classList.add('err');
+        err.classList.toggle('hidden', ok);
+        if(!ok) return;
+        var lines = ['Hi Nailed It Hub, I would like to book an appointment.', '', 'Name: ' + name.value.trim(), 'Phone: ' + digits, 'Service: ' + svc.value];
+        if(date.value) lines.push('Preferred Date: ' + date.value);
+        if(time.value) lines.push('Preferred Time: ' + time.value);
+        if(msg.value.trim()) lines.push('Message: ' + msg.value.trim());
+        window.open('https://wa.me/919810985771?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+      });
+    })();
+  </script>
+</body>
+</html>
